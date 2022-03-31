@@ -18,6 +18,9 @@ namespace RectangleWpfProject.ViewModels
         public RectangleViewModel()
         {
             rectangle = new Rectangle(1, 1);
+            // RC.06 A két parancsot példányosítjuk. Meghatározzuk azokat a metódusokat, amelyeket végrehajtanak.
+            CloseCommand = new RelayCommand(execute => CloseWindow());
+            ComputeCommand = new RelayCommand(execute => ComputeResult());
         }
 
         public string SideA
