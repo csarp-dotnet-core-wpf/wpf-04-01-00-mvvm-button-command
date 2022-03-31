@@ -15,5 +15,8 @@
             <TextBlock Text="Téglalp másik oldalának hossza:" Margin="2 10 2 2 " />
             <TextBox x:Name="txtSidaB" Margin="2 10 1 1" Width="148" Text="{Binding SideB,Mode=TwoWay}"/>
         </StackPanel>
+        <!-- RC.01 Vízszintes irányú StackPanel -->
+        <StackPanel Orientation="Horizontal">
+        </StackPanel>
     </StackPanel>
 </Window>
