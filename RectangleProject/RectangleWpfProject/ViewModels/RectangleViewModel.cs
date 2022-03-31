@@ -77,5 +77,9 @@ namespace RectangleWpfProject.ViewModels
                 return "A téglalap területe: " + roundedArea.ToString() + " négyzetméter.";
             }
         }
+
+        // RC.05 Két parancsot hozunk létre a kötésben szereplő nevekkel
+        public RelayCommand CloseCommand { get; private set; }
+        public RelayCommand ComputeCommand { get; private set; }
     }
 }
