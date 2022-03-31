@@ -17,6 +17,9 @@
         </StackPanel>
         <!-- RC.01 Vízszintes irányú StackPanel -->
         <StackPanel Orientation="Horizontal">
+            <!-- RC.02 A Button vezérlőket a Command parancson keresztül kötjük -->
+            <Button x:Name="btCompute" Margin="120 10" Width="130" Content="Számítás" Command="{Binding ComputeCommand}">
+            </Button>
         </StackPanel>
     </StackPanel>
 </Window>
