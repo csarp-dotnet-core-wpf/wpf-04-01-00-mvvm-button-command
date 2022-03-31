@@ -21,5 +21,14 @@
             <Button x:Name="btCompute" Margin="120 10" Width="130" Content="Számítás" Command="{Binding ComputeCommand}">
             </Button>
         </StackPanel>
+        <!-- RC.03 Vízszintes elrendezést alkalmazunk az adatmegjelenítésnél is -->
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="5 10" Text="{Binding Perimeter}" />
+            <TextBlock x:Name="tbPerimeter" Margin="5 10"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="5 10" Text="{Binding Area}" />
+            <TextBlock x:Name="tbArea" Margin="5 10"/>
+        </StackPanel>
     </StackPanel>
 </Window>
