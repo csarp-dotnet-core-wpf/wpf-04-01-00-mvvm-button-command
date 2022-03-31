@@ -30,5 +30,7 @@
             <TextBlock Margin="5 10" Text="{Binding Area}" />
             <TextBlock x:Name="tbArea" Margin="5 10"/>
         </StackPanel>
+        <!-- RC.04 A kilépés gombot is kötjük -->
+        <Button x:Name="btExit" Margin="250 30 5 5" Width="110" Content="Kilépés" Command="{Binding CloseCommand}"/>
     </StackPanel>
 </Window>
