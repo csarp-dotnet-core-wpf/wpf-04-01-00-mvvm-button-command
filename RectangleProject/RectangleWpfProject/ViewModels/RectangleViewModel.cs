@@ -84,5 +84,17 @@ namespace RectangleWpfProject.ViewModels
         // RC.05 Két parancsot hozunk létre a kötésben szereplő nevekkel
         public RelayCommand CloseCommand { get; private set; }
         public RelayCommand ComputeCommand { get; private set; }
+
+        // RC.07 a két metódust megírjuk. A program működik.
+        public void CloseWindow()
+        {
+            Application.Current.Windows[0].Close();
+        }
+
+        public void ComputeResult()
+        {
+            OnPropertyChanged("Perimeter");
+            OnPropertyChanged("Area");
+        }
     }
 }
