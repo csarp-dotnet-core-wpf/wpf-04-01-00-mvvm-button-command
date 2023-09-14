@@ -1,5 +1,6 @@
 ﻿using RectangleProject.Models;
 using System;
+using System.Windows;
 using ViewModels.BaseClass;
 
 namespace RectangleProject.ViewModels
@@ -72,6 +73,11 @@ namespace RectangleProject.ViewModels
                 double roundedArea = Math.Round(_rectangle.Area, 2);
                 return "A téglalap területe: " + roundedArea.ToString() + " négyzetméter.";
             }
+        }
+
+        private void CloseWindow()
+        {
+            Application.Current.Windows[0].Close();
         }
     }
 }
