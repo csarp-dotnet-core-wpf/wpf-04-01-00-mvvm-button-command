@@ -18,6 +18,17 @@ namespace RectangleProject.ViewModels
             {
                 return _rectangle.SideA.ToString();
             }
+            set
+            {
+                try
+                {
+                    double side = Convert.ToDouble(value);
+                    _rectangle.SideA = side;
+                }
+                catch (Exception e)
+                {
+                }
+            }
         }
     }
 }
