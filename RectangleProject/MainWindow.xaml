@@ -29,6 +29,6 @@
         <StackPanel Orientation="Horizontal">
             <TextBlock Margin="5 10" Text="{Binding Area}" />
         </StackPanel>
-        <Button x:Name="btExit" Margin="250 30 5 5" Width="110" Content="Kilépés"/>
+        <Button x:Name="btExit" Margin="250 30 5 5" Width="110" Content="Kilépés" Command="{Binding CloseCommand}"/>
     </StackPanel>
 </Window>
