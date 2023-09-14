@@ -1,9 +1,10 @@
 ﻿using RectangleProject.Models;
 using System;
+using ViewModels.BaseClass;
 
 namespace RectangleProject.ViewModels
 {
-    public class RectangleViewModel
+    public class RectangleViewModel : ViewModelBase
     {
         private Rectangle _rectangle;
 
