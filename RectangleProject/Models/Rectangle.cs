@@ -7,8 +7,11 @@
 
         public Rectangle(double sideA, double sideB)
         {
-            _sideA = sideA;
-            _sideB = sideB;
+            SideA = sideA;
+            SideB = sideB;
         }
+
+        public double SideA { get => _sideA; set => _sideA = value; }
+        public double SideB { get => _sideB; set => _sideB = value; }
     }
 }
