@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="Téglalap adatainak számítása" Height="270" Width="400">
     <StackPanel Orientation="Vertical">
-
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Téglalp egyik oldalának hossza:" Margin="2 10 2 2 " />
+            <TextBox x:Name="txtSidaA" Margin="2 10 1 1" Width="150"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Téglalp másik oldalának hossza:" Margin="2 10 2 2 " />
+            <TextBox x:Name="txtSidaB" Margin="2 10 1 1" Width="148"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btCompute" Margin="120 10" Width="130" Content="Számítás">
+            </Button>
+        </StackPanel>
+        <Button x:Name="btExit" Margin="250 30 5 5" Width="110" Content="Kilépés"/>
     </StackPanel>
 </Window>
