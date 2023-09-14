@@ -11,6 +11,8 @@ namespace RectangleProject.ViewModels
         public RectangleViewModel()
         {
             _rectangle = new Rectangle(1, 1);
+            CloseCommand = new RelayCommand(execute => CloseWindow());
+            CalculationCommand = new RelayCommand(execute => Calculation());
         }
 
         public RelayCommand CloseCommand { get; private set; }
