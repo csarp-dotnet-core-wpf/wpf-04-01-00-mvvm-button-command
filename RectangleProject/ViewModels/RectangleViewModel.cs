@@ -13,6 +13,9 @@ namespace RectangleProject.ViewModels
             _rectangle = new Rectangle(1, 1);
         }
 
+        public RelayCommand CloseCommand { get; private set; }
+        public RelayCommand CalculationCommand { get; private set; }
+
         public string SideA
         {
             get
