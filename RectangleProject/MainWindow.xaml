@@ -23,6 +23,12 @@
             <Button x:Name="btCompute" Margin="120 10" Width="130" Content="Számítás">
             </Button>
         </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="5 10" Text="{Binding Perimeter}" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="5 10" Text="{Binding Area}" />
+        </StackPanel>
         <Button x:Name="btExit" Margin="250 30 5 5" Width="110" Content="Kilépés"/>
     </StackPanel>
 </Window>
