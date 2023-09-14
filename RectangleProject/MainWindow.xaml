@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:RectangleProject"
         mc:Ignorable="d"
         Title="Téglalap adatainak számítása" Height="270" Width="400">
-    <Grid>
+    <StackPanel Orientation="Vertical">
 
-    </Grid>
+    </StackPanel>
 </Window>
