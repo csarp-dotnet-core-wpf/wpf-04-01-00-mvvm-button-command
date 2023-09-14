@@ -79,5 +79,11 @@ namespace RectangleProject.ViewModels
         {
             Application.Current.Windows[0].Close();
         }
+
+        private void Calculation()
+        {
+            OnPropertyChanged(nameof(Perimeter));
+            OnPropertyChanged(nameof(Area));
+        }
     }
 }
