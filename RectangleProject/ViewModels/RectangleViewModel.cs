@@ -49,5 +49,23 @@ namespace RectangleProject.ViewModels
                 }
             }
         }
+
+        public string Perimeter
+        {
+            get
+            {
+                double roundedPerimeter = Math.Round(_rectangle.Perimeter, 2);
+                return "A téglalap kerülete: " + roundedPerimeter.ToString() + " méter.";
+            }
+        }
+
+        public string Area
+        {
+            get
+            {
+                double roundedArea = Math.Round(_rectangle.Area, 2);
+                return "A téglalap területe: " + roundedArea.ToString() + " négyzetméter.";
+            }
+        }
     }
 }
