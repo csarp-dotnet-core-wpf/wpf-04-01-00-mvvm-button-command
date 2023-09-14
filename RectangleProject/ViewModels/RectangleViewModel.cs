@@ -30,5 +30,24 @@ namespace RectangleProject.ViewModels
                 }
             }
         }
+        public string SideB
+        {
+            get
+            {
+                return _rectangle.SideB.ToString();
+            }
+
+            set
+            {
+                try
+                {
+                    double side = Convert.ToDouble(value);
+                    _rectangle.SideB = side;
+                }
+                catch (Exception e)
+                {
+                }
+            }
+        }
     }
 }
