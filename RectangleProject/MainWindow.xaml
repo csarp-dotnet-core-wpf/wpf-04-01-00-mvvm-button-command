@@ -4,8 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RectangleProject"
+        xmlns:viewmodel="clr-namespace:RectangleProject.ViewModels"
         mc:Ignorable="d"
         Title="Téglalap adatainak számítása" Height="270" Width="400">
+    <Window.DataContext>
+        <viewmodel:RectangleViewModel />
+    </Window.DataContext>
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Téglalp egyik oldalának hossza:" Margin="2 10 2 2 " />
